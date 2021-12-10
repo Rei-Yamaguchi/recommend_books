@@ -1,0 +1,21 @@
+<h1>ユーザー情報</h1>
+
+<h2>アイコン</h2>
+<%= @user.image %>
+
+<h3>ユーザー名</h3>
+<%= @user.nickname %>
+<h3>メールアドレス</h3>
+<%= @user.email %>
+<h3>好きなジャンル</h3>
+<%= @user.favorite_genre%>
+<h3>自己紹介</h3>
+<%= @user.self_introduction %>
+<h3>性別</h3>
+<%= @user.sex%>
+<h3>誕生日</h3>
+<%= @user.birthday %>
+<h3>リンク</h3>
+<%= @user.link %>
+
+<%= link_to 'トップページへ戻る', root_path%>
