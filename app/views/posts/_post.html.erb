@@ -1,0 +1,11 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text"><%= post.content %></p>
+    <%= link_to '詳細', post, class: "btn btn-outline-primary" %>
+    <% if user_signed_in? && current_user.id == post.user_id %>
+    <%= link_to '編集', edit_post_path(post), class: "btn btn-outline-primary" %>
+    <%= link_to '削除', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>
+    <% end %>
+    </div>
+</div>

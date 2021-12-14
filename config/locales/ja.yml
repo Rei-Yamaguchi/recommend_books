@@ -1,0 +1,10 @@
+ja:
+  defaults:
+    login: 'ログイン'
+    register: '登録'
+    logout: 'ログアウト'
+    create: '登録する'
+    message:
+      require_login: 'ログインしてください'
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成できませんでした"

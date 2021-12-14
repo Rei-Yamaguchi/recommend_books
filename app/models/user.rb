@@ -22,6 +22,16 @@ class User < ApplicationRecord
     def inactive_message   
       !deleted_at ? super : :deleted_account  
     end 
+    has_many :posts, dependent: :destroy
+    has_many :responses, dependent: :destroy
 
+    def my_response?(response)
+      response.user_id == id　#self.idの省略形
+    end
+    
+    #こちらのほうが汎用的なので採用◎
+    def own?(object)
+        id == object.user_id
+      end
     
 end

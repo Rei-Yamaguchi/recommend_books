@@ -1,0 +1,10 @@
+<!-- コメントフォーム -->
+<div class="row mb-3">
+  <div class="col-lg-8 offset-lg-2">　
+  <%= form_for [@post, @response] do |f| %>
+    <%= f.text_field :body %>
+    <br>
+    <%= f.submit 'コメントする' %>
+  <% end %>
+  </div>
+</div>
