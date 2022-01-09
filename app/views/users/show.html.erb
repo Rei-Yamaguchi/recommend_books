@@ -1,8 +1,9 @@
 <h1>ユーザー情報</h1>
 
 <h2>アイコン</h2>
-<%= @user.image %>
-
+<% if @user.image? %>
+    <%= image_tag @user.image.url %>
+<% end %>
 <h3>ユーザー名</h3>
 <%= @user.nickname %>
 <h3>メールアドレス</h3>

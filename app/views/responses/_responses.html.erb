@@ -1,7 +1,8 @@
 <h2>コメント一覧</h2>
 <% @responses.each do |c| %>
   <div>
-   p <%= c.body %>
+  ユーザー名<%= @post.user.nickname %><br>
+    <%= c.body %>
     <hr>
   </div>
 <% end %>
