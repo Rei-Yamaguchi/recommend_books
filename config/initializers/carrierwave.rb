@@ -8,7 +8,7 @@ CarrierWave.configure do |config|
         config.fog_provider = 'fog/aws'
         config.fog_directory  = 's3rybucket'
         config.asset_host = 'https://s3-us-east-2.amazonaws.com/s3rybucket'
-        config.asset_host = 'https://ry3test.s3.amazonaws.com'
+        config.asset_host = 'https://ry.s3.amazonaws.com'
 
         config.fog_public = false
 
